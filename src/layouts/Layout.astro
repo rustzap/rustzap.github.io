@@ -1,0 +1,28 @@
+---
+import app from "../configs/default";
+---
+
+<!doctype html>
+<html lang={app.lang}>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<meta name="description" content={app.desc} />
+		<title>{app.name}</title>
+	</head>
+	<body>
+		<slot />
+	</body>
+</html>
+
+<style>
+	*,
+	*::before,
+	*::after {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+</style>
